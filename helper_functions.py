@@ -5,5 +5,5 @@ def env(variable_name: str) -> str:
 
     for item in variables:
         key, value = item.split('=')
-        if key == variable_name:
+        if key == str(variable_name).strip():
             return str(value).strip()
